@@ -1,0 +1,3 @@
+SELECT people.first_name, people.last_name, people.state_code, states.division
+	FROM people
+	JOIN states ON people.state_code=states.state_abbrev;

@@ -1,0 +1,5 @@
+INSERT INTO people (first_name) VALUES ('Bob');
+SELECT first_name
+	FROM people;
+SELECT	*
+	FROM people;

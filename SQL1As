@@ -1,0 +1,25 @@
+SELECT shirt_or_hat, first_name, last_name
+	FROM people
+	WHERE (state_code = 'CA' OR	state_code != 'TX') AND team != 'Angry Ants';
+	
+SELECT *
+	FROM people
+	WHERE state_code LIKE 'C%'
+	LIMIT 5 OFFSET 5;
+	
+SELECT first_name, last_name
+	FROM people
+	ORDER BY first_name;
+	
+SELECT first_name, last_name, state_code
+	FROM people
+	ORDER BY state_code, first_name DESC;
+	
+SELECT DISTINCT (first_name)
+	FROM people
+	ORDER BY first_name ASC;
+	
+SELECT count (*)
+	FROM people
+	WHERE state_code = 'TX';
+	

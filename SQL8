@@ -1,0 +1,2 @@
+SELECT max(quiz_points), min(quiz_points)
+	FROM people;

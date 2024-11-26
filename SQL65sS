@@ -1,0 +1,3 @@
+SELECT first_name AS first, SUBSTR(last_name, -3) AS surname, quiz_points
+	FROM people
+	ORDER BY CAST(quiz_points AS char);

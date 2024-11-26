@@ -1,0 +1,9 @@
+SELECT *
+	FROM states;
+	
+SELECT *
+	FROM people
+	LEFT JOIN states
+	ON people.state_code = states.state_abbrev;
+	
+	-- null value on right side in some cases

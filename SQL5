@@ -1,0 +1,8 @@
+ -- SQL group by state , order by avg points descending
+ SELECT states.state_name, MAX(people.quiz_points) AS MAXPOINTS, AVG(people.quiz_points) AS AVGPOINTS
+	FROM people
+	JOIN states
+	ON states.state_abbrev = people.state_code
+	GROUP BY states.state_abbrev
+	ORDER BY AVGPOINTS DESC;
+	
